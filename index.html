@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Culinary Chaos: Brisket Edition</title>
+    <!-- Linking the external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <button id="toggle-recipes" onclick="toggleSidebar()">📖 Recipe Cards</button>
+
+    <aside id="recipe-sidebar">
+        <h2>Your Recipes</h2>
+        <div id="recipe-list"></div>
+    </aside>
+
+    <main id="game-area">
+        <h1 id="current-target">Pick a Recipe to Start</h1>
+        <div id="cooking-pot">
+            <!-- Ingredients will appear here -->
+        </div>
+        <div class="controls">
+            <button onclick="serveDish()">Serve Dish</button>
+            <button style="background: #777;" onclick="resetPot()">Clear Pot</button>
+        </div>
+    </main>
+
+    <nav id="ingredient-shelf">
+        <!-- Buttons injected by JS -->
+    </nav>
+
+    <div id="feedback-overlay">
+        <div id="result-card">
+            <h2 id="result-title"></h2>
+            <div id="result-details"></div>
+            <br>
+            <button onclick="closeFeedback()">Try Again</button>
+        </div>
+    </div>
+
+    <!-- Linking the external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
